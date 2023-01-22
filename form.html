@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--How to give a HTML document a title-->
+    <title>Forms & input</title>
+    <!--In-line styling in HTML-->
+    <style>
+        body{
+            text-align: center;
+        }
+        input:hover {
+         background-color:wheat;   
+        }
+        button {
+            color: blue;
+            background-color:aqua;
+            border-radius: 10px;
+            border: none;
+            padding: 6px;
+        }
+        button a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            font-size: medium;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button>
+            <a href="index.html">Home</a>
+        </button>
+    </div>
+    <header>
+        <h1>REGISTRATION FORM</h1>
+    </header>
+    <form action="process.MySQL">
+        <!-- Text -->
+        <div>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+        <!-- Text -->
+        <div>
+
+            <label for="firstname">First Name</label><br>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+        <!-- Text  -->
+        <div>
+            <label for="middlename">Middle Name</label><br>
+            <input type="text" name="middlename" id="middlename">
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <!-- Textarea -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="Telephone">Telephone</label><br>
+            <input type="number" name="telephone" id="telephone">
+        </div>
+        <!-- Date -->
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <input type="date" name="birthdate" id="biirthdate">
+        </div>
+        <!-- Radio -->
+        <div>
+            <label for="membership">Membership</label>
+            <input type="radio" name="membership" value="Yes" id="membership">Yes
+            <input type="radio" name="membership" value="No" id="membership">No
+            <input type="radio" name="membership" value="None" id="membership">None
+        </div>
+        <!--Input submit-->
+        <input type="submit" value="submit">
+        <!-- Button submit -->
+        <!-- <button type="submit">Submit</button> -->
+        <button type="reset">Reset</button>
+            
+
+
+
+    </form> 
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+input:hover {
+ background-color:wheat;   
+}
+button {
+    color: blue;
+    background-color:aqua;
+    border-radius: 10px;
+    border: none;
+    padding: 6px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: medium;
+}
+button:hover{
+    background-color: aquamarine;
+}
